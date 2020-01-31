@@ -1,0 +1,88 @@
+// Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+/** GENERAL **/
+/* LETTERTYPES */
+@font-face{
+  font-family:pfr;
+  src: url('../fonts/Playfair_Display/PlayfairDisplay-Regular.ttf');
+}
+@font-face{
+  font-family:ubl;
+  src:url('../fonts/Ubuntu/Ubuntu-Light.ttf');
+}
+body{
+  font-family:pfr;
+  font-size:0.7rem;
+}
+h2{
+  font-family:ubl,sans-serif;
+  font-size: 0.7rem;
+  color:#b4ad9e;
+}
+.navbar-brand{
+  font-family: 'Inconsolata', monospace;
+  font-size:2rem;
+}
+h3{
+  font-size: 1.5rem;
+}
+.category{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.categoryh{
+  margin-bottom: 10px;
+}
+.bgGrey{
+  background-color: #f0f0f0;
+}
+.email{
+  background: none;
+  border: none;
+  border-bottom: black 1px solid;
+}
+@include media-breakpoint-up(sm) {
+  h3{
+    font-size: 2rem;
+  }
+}
+@include media-breakpoint-up(md) {
+}
+
+@include media-breakpoint-up(lg) {
+}
+@include media-breakpoint-up(xl){
+}
+.mt-6{
+  margin-top: 500px;
+}
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .category{
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+  .categoryh{
+    margin-bottom: 24px;
+  }
+}
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .mt-6{
+    margin-top: 1000px;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .mt-6{
+    margin-top: 1400px;
+  }
+}
+
+
+

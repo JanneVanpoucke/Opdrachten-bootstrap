@@ -1,0 +1,274 @@
+// Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+.body{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  color: #999999;
+}
+.tekstsectie3{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.8rem !important;
+  color: #999999 !important;
+}
+body, html {
+  overflow-x:hidden;
+}
+@include media-breakpoint-up(sm) {
+
+}
+@include media-breakpoint-up(md) {
+  .tekstsectie3{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem !important;
+    color: #999999 !important;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+}
+@include media-breakpoint-up(xl){
+}
+.nav-link:hover{
+  border-bottom: 2px solid #3baafe !important;
+}
+.nav-link{
+  font-size: 14px;
+  color: #a8a8a8 !important;
+}
+.text {
+  text-transform: uppercase;
+  background: radial-gradient( #b6b6b6, #efefef,#e9e9e9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 18px;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: bold;
+  filter: drop-shadow(2px 2px #cbcbcb);
+}
+.titel1{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 36pt;
+  color: #ffffff !important;
+  font-weight: 800 !important;
+}
+.btn{
+  padding-right: 30px;
+  padding-left: 30px;
+  background-color: #555555;
+  color: #FFFFFF;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18pt;
+  border-radius: 0 !important;
+}
+.introknop:hover{
+  background-color: #ffffff;
+  color: #777777;
+}
+.sectie1{
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+article>div{ /*/padding op mijn eerste div van article*/
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 25px;
+
+/*  padding: 0px 30px 30px 30px; shorthandnotatie voor padding met de klok mee dus top - right - bottom - left*/
+}
+
+.bolleke{
+  margin-top: -50px;
+  border:5px solid #fff;
+}
+.h2headerbollekes{
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.bollekesp{
+  margin-bottom: 25px;
+  color: #999999 !important;
+}
+.grijzeachtergrond{
+  background-color: #f5f5f5;
+}
+.tussentitel{
+  font-size: 18px;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: bold;
+  color: #777777 !important;
+}
+.streepjetussentitel1{
+  border-bottom: 3px solid #3baafe;
+  margin-left: 5px;
+  filter: drop-shadow(2px 2px #cbcbcb);
+}
+.streepjetussentitel2{
+  border-bottom: 3px solid #FFFFFF;
+  margin-left: 5px;
+  filter: drop-shadow(2px 2px #cbcbcb);
+}
+.parallax{
+  /* hier zet je de backgroundimage die je moet scrollen */
+  background-image: url(../images/straat.jpg);
+  /* FULL HEIGHT */
+  height: 750px; /* HOOGTE VAN SCHERMWEERGAVE */
+  /* CREATIE VAN HET PARALLAX SCROLL EFFECT */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.titelsectie3{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24pt;
+  color: #ffffff !important;
+  font-weight: bold !important;
+  filter: drop-shadow(2px 2px #dadada);
+}
+.tekstsectie3{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14pt;
+  color: #999999 !important;
+}
+.parallax2{
+  /* hier zet je de backgroundimage die je moet scrollen */
+  background-image: url(../images/verkeer.jpg);
+  /* FULL HEIGHT */
+ /* height: 750px; !* HOOGTE VAN SCHERMWEERGAVE *!*/
+  /* CREATIE VAN HET PARALLAX SCROLL EFFECT */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.p2{
+  color: #999999 !important;
+  font-size: 14pt;
+}
+.ptpb{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+/*Sectie 4*/
+.streepjetussentitel2{
+  border-bottom: 3px solid #b6b6b6;
+  margin-left: 5px;
+  filter: drop-shadow(2px 2px #cbcbcb);
+}
+.titelsectie4{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24pt;
+  color: #3baafe !important;
+  font-weight: bold !important;
+  filter: drop-shadow(2px 2px #dadada);
+}
+.parallax3{
+  /* hier zet je de backgroundimage die je moet scrollen */
+  background-image: url(../images/metro.jpg);
+  /* FULL HEIGHT */
+  /* height: 750px; !* HOOGTE VAN SCHERMWEERGAVE *!*/
+  /* CREATIE VAN HET PARALLAX SCROLL EFFECT */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.titelsectie5{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24pt;
+  color: #7a7878 !important;
+  font-weight: bold !important;
+  filter: drop-shadow(2px 2px #dadada);
+}
+.bollekeschaduw{
+  margin-top: -50px;
+  border:5px solid #fff;
+  box-shadow: 2px 2px #dadada;
+}
+.ptpb2{
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.nameblue{
+  color: #3baafe;
+  font-size: 14pt;
+  transform: skewX(20deg);
+}
+.namegray{
+  color: #7a7878;
+  font-size: 14pt;
+  transform: skewX(20deg);
+}
+.spring{
+  margin-top: -40px;
+}
+.bollekeschaduw2{
+  border:5px solid #fff;
+  box-shadow: 2px 2px #dadada;
+}
+.witkotje{
+  background-color: #FFFFFF;
+  box-shadow: 2px 2px #dadada;
+  transition: transform 0.3s;
+  transform: skewX(-20deg);
+}
+.grijskotje{
+  background-color: #e6e6e6;
+  box-shadow: 2px 2px #dadada;
+  margin-top: -20;
+  transition: transform 0.3s;
+  transform: skewX(-20deg);
+}
+.tekstsectie6{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14pt;
+  color: #999999 !important;
+  transform: skewX(20deg);
+}
+.grijzeachtergrond2{
+  background-color: #f5f5f5;
+  transition: transform 0.3s;
+  transform: skewX(-20deg);
+}
+.tekstrecht{
+  transform: skewX(20deg);
+}
+.knop{
+  background: #f5f5f5 !important;
+  border:none;
+}
+
+.blue:hover{
+  background-color: #3baafe;
+}
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+
+}
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+
+}
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+
+}
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .nav-link:hover{
+    border-bottom: 2px solid #3baafe !important;
+  }
+  .positie{
+    position: relative;
+  }
+  .positie2{
+    //position: absolute;
+    z-index: 10;
+  }
+  .positie3{
+    position: absolute;
+    z-index: 5;
+    left: 27%;
+  }
+
+}

@@ -1,0 +1,213 @@
+/*Fonts*/
+@font-face {
+  font-family: 'LatoRegular';
+  src: url("../fonts/Lato-Regular.ttf") format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  url("../fonts/Lato-Regular.ttf") format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+@font-face {
+  font-family: 'LatoBold';
+  src: url("../fonts/Lato-Bold.ttf") format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  url("../fonts/Lato-Bold.ttf") format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+@font-face {
+  font-family: 'LatoBlack';
+  src: url("../fonts/Lato-Black.ttf") format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  url("../fonts/Lato-Black.ttf") format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+@font-face {
+  font-family: 'LatoItalic';
+  src: url("../fonts/Lato-Italic.ttf") format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  url("../fonts/Lato-Italic.ttf") format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+@font-face {
+  font-family: 'LatoLight';
+  src: url("../fonts/Lato-Light.ttf") format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  url("../fonts/Lato-Light.ttf") format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+body{
+  font-family: 'LatoRegular', sans-serif;
+  font-size: 1rem;
+}
+body, html {
+  overflow-x:hidden;
+}
+.active{
+  font-family: 'LatoBold',sans-serif;
+}
+.brandTitle{
+  font-size: 2.25rem;
+  font-family: 'LatoLight',sans-serif;
+}
+/*.badge{
+  font-weight: normal;
+  font-size: 1rem;
+}*/
+.witteTitel{
+  font-family: 'LatoBold', sans-serif;
+  font-size: 3rem;
+}
+.gradientTitel{
+  font-family: 'LatoBold', sans-serif;
+  font-size: 2rem;
+  background: -webkit-linear-gradient(#cb0035, #e06900);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.gradientGroteTitel{
+  font-family: 'LatoBold', sans-serif;
+  font-size: 3rem;
+  background: -webkit-linear-gradient(#cb0035, #e06900);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.kleineTekst{
+  font-size: 0.875rem;
+  color: #a7acbc;
+}
+.lichteTekst{
+  font-family: LatoLight,sans-serif;
+  color: #a7acbc;
+}
+.cijfer{
+  font-size: 1.5rem;
+}
+.btn{
+  font-family: 'LatoLight',sans-serif;
+}
+.eersteKnop{
+  color: #d32721;
+  background-color: white;
+  font-size: 0.8rem;
+}
+.tweedeKnop{
+  border: white 1px solid;
+  font-size: 0.8rem;
+}
+@include media-breakpoint-up(sm) {
+  .eersteKnop{
+    color: #d32721;
+    background-color: white;
+    font-size: 1.125rem;
+  }
+  .tweedeKnop{
+    border: white 1px solid;
+    font-size: 1.125rem;
+
+  }
+}
+@include media-breakpoint-up(md) {
+  body{
+    font-family: 'LatoRegular', sans-serif;
+    font-size: 1.125rem;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+}
+@include media-breakpoint-up(xl){
+}
+
+.bgHeader{
+  background-image: url("../img/backgroundheader.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.bgLichtGrijs{
+  background-color: #f6f6f6;
+}
+.bgDeelTwee{
+  background-image: url("../img/Droneblok3.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+}
+.bgDeelVier{
+  background-image: url("../img/nieuwsbrief.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.rounded-pill{
+  border: white 1px solid;
+}
+.mt-6{
+  margin-top: 50px;
+}
+.mb-6{
+  margin-bottom: 100px;
+}
+.eersteKnop{
+  color: #d32721;
+  background-color: white;
+}
+.tweedeKnop{
+  border: white 1px solid;
+}
+.verdwijnHover:hover{
+  color: white;
+  background-color: transparent;
+}
+.tweedeKnop:hover{
+  color: #d32721 !important;
+  background-color: white;
+}
+.derdeKnop:hover{
+  color: #007bff !important;
+  background-color: #f6f6f6 !important;
+  border: #007bff 1px solid !important;
+}
+.kleurHover:hover{
+  background: -webkit-linear-gradient(#cb0035, #e06900);
+  border: none;
+  color: white;
+}
+.border-grey {
+  border: solid rgb(206, 212, 218) 1px;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white !important;
+  opacity: 1; /* Firefox */
+}
+//Over elkaar:
+
+.input-group-append {
+  position: absolute;
+  z-index: 1 !important;
+}
+.form-control {
+  background-color: rgba(255, 255, 255, 0.3);
+  margin-right: -30px;
+  position: relative;
+  z-index: 0 !important;
+}
+
+// Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .mt-6{
+    margin-top: 200px;
+  }
+  .mb-6{
+    margin-bottom: 500px;
+  }
+}
+
+
